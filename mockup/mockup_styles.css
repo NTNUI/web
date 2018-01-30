@@ -1,0 +1,21 @@
+
+.topnavbar {
+    overflow: hidden;
+}
+
+.topnavbar a {
+    text-align: center;
+    padding-right: 10vw;
+    font-size: 5vh;
+}
+
+.topnavbar a1:hover {
+    color: green
+}
+
+#rectangle { 
+    width: 10vw; 
+    height: 1.5vh;
+    background: green; 
+}
+
