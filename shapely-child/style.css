@@ -12,3 +12,6 @@
  Text Domain:  shapely-child
 */
 
+.post-content .shapely-category {
+  display: none;
+}
