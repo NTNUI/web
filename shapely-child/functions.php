@@ -11,4 +11,15 @@ function my_theme_enqueue_styles() {
     );
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
+
+function shapely_child_exclude_page_templates() {
+		unset( $post_templates['page-templates/full-width.php'] );
+		unset( $post_templates['page-templates/no-sidebar.php'] );
+		unset( $post_templates['page-templates/sidebar-left.php'] );
+		unset( $post_templates['page-templates/sidebar-right.php'] );
+
+	return $post_templates;
+}
+
+add_action( 'theme_page_templates', 'shapely_child_exclude_page_templates' );
 ?>
