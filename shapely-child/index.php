@@ -14,7 +14,7 @@
 get_header(); ?>
 <?php $layout_class = shapely_get_layout_class(); ?>
 	<div class="row">
-		<div id="primary" class="col-md-8 mb-xs-24 <?php echo esc_attr( $layout_class ); ?>">
+		<div id="primary" class="<?php echo esc_attr( $layout_class ); ?>">
 																<?php
 																if ( have_posts() ) :
 
